@@ -18,9 +18,7 @@ driver = webdriver.Chrome(options=options)
 
 try:
     driver.get("https://www.flipkart.com/")
-    # driver.maximize_window()
 
-    # Search for the product
     time.sleep(2)
     search_box = driver.find_element(By.NAME, "q")
     search_box.send_keys("Samsung Galaxy S10")
